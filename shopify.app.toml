@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "shoprunner-UI-Ext"
+client_id = "33e6fa4ea2ea4d00f5b9882252211df2"
+application_url = "https://vessel-spelling-brilliant-clinton.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://vessel-spelling-brilliant-clinton.trycloudflare.com/auth/callback",
+  "https://vessel-spelling-brilliant-clinton.trycloudflare.com/auth/shopify/callback",
+  "https://vessel-spelling-brilliant-clinton.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shoprunner-checkout-extension-ui.myshopify.com"
